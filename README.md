@@ -21,10 +21,10 @@ BloodLens AI uses **Generative AI, LangChain, Google Gemini, and Streamlit** to 
 
 ---
 
-## 🏗️ System Architecture
+
 
 ```
-
+## 🏗️ System Architecture
 User
 |
 | Enter Blood Report
