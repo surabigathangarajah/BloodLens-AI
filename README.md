@@ -150,7 +150,8 @@ The extracted results are analyzed by the LLM to generate:
 
 ## 📸 Application Preview
 
-<img width="1920" height="842" alt="Application" src="https://github.com/user-attachments/assets/3d0f755a-8c3a-4ab6-9f53-b48b7ccd0183" />
+<img width="1920" height="1320" alt="Application" src="https://github.com/user-attachments/assets/aee388e2-4add-487c-9c7c-9a25939ba052" />
+
 
 
 ---
