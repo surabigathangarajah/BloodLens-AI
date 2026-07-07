@@ -1,75 +1,169 @@
-# Blood-Test-Report-Analyzer-using-LLM
-An AI-powered blood report analysis system using a two-stage LLM pipeline to extract test values, detect abnormalities, and generate health summaries with Indian diet recommendations.
+```markdown
+# 🩸 BloodLens AI
 
-Blood Work Analyzer – Streamlit App
+An AI-powered blood report analysis assistant that converts complex laboratory results into simple health insights and personalized dietary recommendations.
 
-This project is a Streamlit-based web application that analyzes blood work reports using a Large Language Model. It provides a simple health summary and an Indian diet plan based on medical test results.
+BloodLens AI uses **Generative AI, LangChain, Google Gemini, and Streamlit** to extract blood test values, identify abnormal results, and generate easy-to-understand health summaries.
 
-Overview
+---
 
-The application allows users to paste a blood work report and receive:
+## 🚀 Features
 
-A structured analysis of blood test values
-A health summary written in simple language
-A practical Indian diet plan based on the results
+- 🧪 Extracts blood test values from blood reports
+- 📊 Classifies results as:
+  - HIGH
+  - LOW
+  - NORMAL
+- 🤖 Uses Large Language Models (LLMs) for medical report analysis
+- 📝 Generates simple health summaries
+- 🥗 Provides practical Sri Lankan diet recommendations
+- 💻 Interactive Streamlit web application
 
-The system uses a two-stage LLM pipeline behind the interface.
+---
 
-Features
-Interactive Streamlit web interface
-Easy input through a text area
-Real-time analysis using Google Gemini LLM
-Clean separation of health summary and diet plan
-Scrollable output sections for better readability
-Indian diet-focused recommendations
-How It Works
-Stage 1: Blood Report Analysis
+## 🏗️ System Architecture
 
-The model:
+```
 
-Extracts all medical test values
-Compares them with reference ranges
-Labels each value as HIGH, LOW, or NORMAL
-Stage 2: Health Insights and Diet Plan
-
-Based on the analysis, the model generates:
-
-A simple 4–5 line health summary
-An Indian diet plan with:
-Foods to eat more of
-Foods to avoid
-Uses commonly available Indian foods like dal, rice, roti, and vegetables
+User
+|
+| Enter Blood Report
+↓
+Streamlit Application
+|
+↓
+LangChain Framework
+|
+↓
+Google Gemini / Gemma LLM
+|
+↓
+Blood Report Analysis
+|
+├── Extract Test Values
+|
+├── Classify Results
+|
+└── Generate Health Summary + Diet Plan
+|
+↓
 User Interface
 
-The Streamlit app contains:
+```
 
-Left side: Input area for pasting blood reports and an Analyze button
-Right side: Output sections for:
-Health Summary
-Suggested Diet Plan
+---
 
-Both output sections are scrollable for better user experience.
+## 🛠️ Tech Stack
 
-Technologies Used
-Python
-Streamlit
-LangChain
-Google Gemini LLM
-dotenv for environment configuration
-Workflow
-User pastes blood report into the app
-Clicks Analyze
-LLM extracts and classifies blood test values
-Second LLM prompt generates health summary and diet plan
-Results are displayed in structured UI format
-Key Highlights
-Two-stage LLM reasoning pipeline
-Clean and user-friendly UI using Streamlit
-Real-time medical report interpretation
-Indian diet recommendations for practicality
-Scrollable and well-structured output layout
-Use Cases
-Personal health report understanding
-Educational medical AI demo
-Nutrition guidance prototype
-AI-powered health assistant interface
+- **Programming Language:** Python
+- **Frontend:** Streamlit
+- **AI Framework:** LangChain
+- **Large Language Model:** Google Gemini / Gemma
+- **Environment Management:** python-dotenv
+
+---
+
+## 📂 Project Structure
+
+```
+
+BloodLens-AI/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .env.example
+└── sample_report.txt
+
+````
+
+---
+
+## ⚙️ Installation & Setup
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/BloodLens-AI.git
+````
+
+Navigate to the project folder:
+
+```bash
+cd BloodLens-AI
+```
+
+---
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### Setup Environment Variables
+
+Create a `.env` file:
+
+```env
+GOOGLE_API_KEY=your_api_key_here
+```
+
+Add your Google Gemini API key.
+
+---
+
+### Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser.
+
+---
+
+## 🔍 How It Works
+
+### Stage 1: Blood Report Extraction
+
+The AI extracts:
+
+* Test name
+* Test value
+* Reference range
+* Status (HIGH / LOW / NORMAL)
+
+from the given blood report.
+
+### Stage 2: Health Analysis
+
+The extracted results are analyzed by the LLM to generate:
+
+* Simple health summary
+* Blood report interpretation
+* Personalized diet recommendations
+
+---
+
+## 📸 Application Preview
+
+<img width="1920" height="842" alt="Application" src="https://github.com/user-attachments/assets/3d0f755a-8c3a-4ab6-9f53-b48b7ccd0183" />
+
+
+---
+
+
+
+## 🔮 Future Improvements
+
+* PDF blood report upload support
+* OCR-based report extraction
+* Retrieval Augmented Generation (RAG) for medical knowledge
+* Patient history tracking
+* Cloud deployment
+
+```
+```
