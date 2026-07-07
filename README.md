@@ -24,6 +24,7 @@ BloodLens AI uses **Generative AI, LangChain, Google Gemini, and Streamlit** to 
 
 
 ```
+
 ## 🏗️ System Architecture
 User
 |
@@ -63,9 +64,10 @@ User Interface
 
 ---
 
-## 📂 Project Structure
+
 
 ```
+## 📂 Project Structure
 
 BloodLens-AI/
 │
